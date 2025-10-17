@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #931010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 22px;
+  margin: 15px 0 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  font-style: oblique;
+  color: #555;
+  margin-bottom: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: crimson;
+  margin-bottom: 15px;
+}
+.product-price strike {
+  font-size: 14px; /* smaller than 20px of main price */
+  color: grey;     /* optional: make it lighter */
+  margin-left: 5px; /* optional spacing from main price */
+}
+
+.buy-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: darkred;
+}
