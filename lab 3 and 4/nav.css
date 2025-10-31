@@ -1,0 +1,90 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container background */
+.container {
+  width: 100%;
+  background-color: darkblue;
+}
+
+/* Navbar default (desktop) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Login button */
+.nav-button .btn {
+  background-color: #97979d;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.nav-button .btn:hover {
+  background-color: #0097a7;
+}
+
+/* ✅ Responsive layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* stack top to bottom */
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  /* ✅ Smaller login button on mobile */
+  .nav-button .btn {
+    font-size: 18px;
+    padding: 6px 12px;  /* smaller size */
+    border-radius: 3px;
+  }
+}
